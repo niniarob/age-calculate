@@ -1,0 +1,32 @@
+@media screen and (max-width:600px){
+    .card{
+        width: 345px;
+        border-radius: 24px 24px 100px 24px;
+    }
+    .container{
+        padding: 38px 24px ;
+        width: 345px;
+    }
+    .form_container{
+        margin-bottom: 3rem;
+        gap: 5px;
+        justify-content: space-between;
+    }
+    .submit_block{
+        position: relative;
+    }
+    .submit_btn{
+        margin-top: 70px;
+        position: absolute;
+        padding: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .output{
+        margin-top: 3rem;
+    }
+    .output h1{
+        font-size: 3.5rem;
+    }
+    
+}

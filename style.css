@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*,*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+:root{
+    --bodyC: #F0F0F0;
+    --cardC:#ffffff;
+    --formTextC:#716F6F;
+    --formNumberC:#151515;
+    --formInputC:#DCDCDC;
+    --imgBC:#854DFF;
+    --errorC:#FF5959;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bodyC);
+}
+.card{
+    background-color: var(--cardC);
+    width: 740px;
+    border-radius: 24px 24px 200px 24px;
+}
+.container{
+    width: 740px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.form_container{
+    display: flex;
+    gap: 32px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+}
+.block label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+input{
+    width: 100px;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--formInputC);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    outline: none;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+    margin: 0;
+}
+input::placeholder{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.submit_block{
+    display: flex;
+    align-items: center;
+}
+.submit_block hr{
+    width: 100%;
+}
+.submit_block .submit_btn{
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: var(--imgBC);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit_btn:focus{
+    background-color: var(--formNumberC);
+}
+.output h1{
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+}
+.output span{
+    color: var(--imgBC);
+}
+small{
+    display: none;
+    margin-top: 10px;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--errorC);
+}
